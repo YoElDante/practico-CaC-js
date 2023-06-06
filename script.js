@@ -97,7 +97,7 @@ btnResumen.addEventListener('click', () => {
         costo.textContent = boletoConDescuento;
     }
 
-    if ((categoria.value == "trainee")) {
+    if ((categoria.value == "Trainee")) {
         //Cambio de Color la card
         carta2.classList.replace('borde-color-azul', 'borde-color-naranja');
         carta1.classList.replace('borde-color-naranja', 'borde-color-azul');
