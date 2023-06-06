@@ -1,9 +1,4 @@
 /* ---------------------------------------- */
-/*            Estilos Generales             */
-/* ---------------------------------------- */
-
-
-/* ---------------------------------------- */
 /*          Barra de Navegación             */
 /* ---------------------------------------- */
 
@@ -14,24 +9,28 @@
 /*            Tarjetas-Boton                */
 /* ---------------------------------------- */
 
-.card {
+.borde-color-azul {
+    cursor:pointer;
     margin: 10px;
     padding-top: 10px;
     border-color: rgb(63, 128, 220);
     box-shadow: 2px 2px 5px  rgb(63, 128, 220);
 }
-/*
-.card :hover{
-    border-color: rgb(63, 128, 220);
-    box-shadow: 2px 2px 5px  rgb(63, 128, 220);
+
+.borde-color-naranja{
+    cursor:pointer;
+    margin: 10px;
+    padding-top: 10px;
     border-color: orange;
-    box-shadow: 2px 2px 5px  orange;
-}*/
+    box-shadow: 2px 2px 5px orange;
+} 
+
 
 /* ---------------------------------------- */
 /*              Formulario                  */
 /* ---------------------------------------- */
 
+/* Botones */
 .btnForm {
     /*margin-inline: 1px;*/
     background-color: rgb(121, 184, 26);
@@ -50,6 +49,7 @@
 /* ---------------------------------------- */
 
 footer {
+    /*Gradiente de Colores para el BackGround */
     place-content: center; 
     background: rgba(25,22,84,1); 
     background: -moz-linear-gradient(left, rgba(25,22,84,1) 0%, rgba(67,198,172,1) 100%); 
@@ -65,8 +65,3 @@ footer a{
         text-decoration:none;
         color: whitesmoke;
 }
-
-/* ---------------------------------------- */
-/* Medias Querys - Adaptaciones Responsibas */ 
-/* ---------------------------------------- */
-
