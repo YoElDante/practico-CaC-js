@@ -117,12 +117,12 @@
 		</section>
 
 		<h4 class="d-flex justify-content-center">Venta</h4>
-		<h1 class="d-flex justify-content-center p-3">VALOR DE TICKET $<span id="costoEnTitulo">200</span> </h1> 
+		<h1 class="d-flex justify-content-center p-1">VALOR DE TICKET $<span id="costoEnTitulo">200</span> </h1>
 
 		<!-- ---------------------------------------- -->
 		<!--              Formulario                  -->
 		<!-- ---------------------------------------- -->
-		<div class="container">
+		<div class="container p-4">
 			<form class="row g-3" id="formulario">
 				<div class="col-md-6">
 					<input type="text" class="form-control" id="nombre" placeholder="Nombre">
@@ -147,19 +147,24 @@
 				</div>
 
 				<!--Indicador Precio-->
-				<div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
-					<span>Total a Pagar: $ </span>
-					<span id="costo">200.00</span>
-				</div>
+					<div>
+						<p class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">Total a Pagar: $ 
+							<span id="costo">200.00</span>
+						</p>
+					</div>
+					
+
 
 				<!--Botones-->
-				<div class="container p-3">
-					<div class="d-flex justify-content-evenly col-md-13 row justify-content-between">
-						<button type="button" class="col-5 btn btn-success btn-lg">Borrar</button>
-						<button type="button" class="col-5 btn btn-success btn-lg">Resumen</button>
+					<div class="col-md-6">
+						<button type="button" class="btnForm col-12 btn btn-success btn-lg">Borrar</button>
 					</div>
-				</div>
+					<div class="col-md-6">
+						<button type="button" class="btnForm col-12 btn btn-success btn-lg">Resumen</button>
+					</div>
+
 			</form>
+
 		</div>
 
 	</main>

@@ -7,10 +7,9 @@
 /*          Barra de Navegación             */
 /* ---------------------------------------- */
 
-.nav-link {
-    color:whitesmoke;
+.navbar-toggler {
+    background-color: white;
 }
-
 /* ---------------------------------------- */
 /*            Tarjetas-Boton                */
 /* ---------------------------------------- */
@@ -18,12 +17,32 @@
 .card {
     margin: 10px;
     padding-top: 10px;
+    border-color: rgb(63, 128, 220);
+    box-shadow: 2px 2px 5px  rgb(63, 128, 220);
 }
+/*
+.card :hover{
+    border-color: rgb(63, 128, 220);
+    box-shadow: 2px 2px 5px  rgb(63, 128, 220);
+    border-color: orange;
+    box-shadow: 2px 2px 5px  orange;
+}*/
+
 /* ---------------------------------------- */
 /*              Formulario                  */
 /* ---------------------------------------- */
 
+.btnForm {
+    /*margin-inline: 1px;*/
+    background-color: rgb(121, 184, 26);
+    border-color: rgb(121, 184, 26);
+}
 
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color:  rgb(92, 140, 20);
+    border-color: rgb(92, 140, 20);
+}
 
 
 /* ---------------------------------------- */
