@@ -76,10 +76,19 @@ btnBorrar.addEventListener('click', () => {
     carta1.classList.replace('borde-color-naranja', 'borde-color-azul');
     carta2.classList.replace('borde-color-naranja', 'borde-color-azul');
     carta3.classList.replace('borde-color-naranja', 'borde-color-azul');
-
+    //Valor de las Entradas Inicial
     boletoConDescuento = valorBoleto;
     costoEnTitulo.textContent = boletoConDescuento;
     costo.textContent = boletoConDescuento;
+    //Borrar Campos
+    let eraser = document.getElementById('nombre');
+    eraser.value ="";
+    eraser = document.getElementById('apellido');
+    eraser.value ="";
+    eraser = document.getElementById('mail');
+    eraser.value = "";
+    cantidad.value = 1;
+    categoria.value="Estudiante";
 }
 )
 
