@@ -7,11 +7,14 @@ let carta1 = document.getElementById("card1");
 let carta2 = document.getElementById("card2");
 let carta3 = document.getElementById("card3");
 
-/* Capturando Valores de la Entrada */
+/* Capturando Costos de la Entrada */
 let costoEnTitulo = document.getElementById('costoEnTitulo');
 let costo = document.getElementById('costo');
 
 /* Capturandop Elementos del Formulario*/
+let nombre = document.getElementById("nombre");
+let apellido = document.getElementById("apellido");
+let email = document.getElementById("mail");
 let cantidad = document.getElementById("inputCant");
 let categoria = document.getElementById("categoria");
 
@@ -95,6 +98,27 @@ btnBorrar.addEventListener('click', () => {
 /* Boton Resumen */
 btnResumen.addEventListener('click', () => {
 
+    
+    if (nombre.value == false){
+        nombre.classList.add("incomplete-form");
+        return console.log ("Falta colocar Nombre");
+    } else {
+        nombre.classList.remove("incomplete-form");
+    }
+
+    if (apellido.value == false){
+        apellido.classList.add("incomplete-form");
+        return console.log ("Falta colocar Apellido");
+    } else {
+        apellido.classList.remove("incomplete-form");
+    }
+
+    if (email.value == false){
+        email.classList.add("incomplete-form");
+        return console.log ("Falta colocar email");
+    } else {
+        email.classList.remove("incomplete-form");
+
     if (categoria.value == "Estudiante") {
         //Cambio de Color la card
         carta1.classList.replace('borde-color-azul', 'borde-color-naranja');
@@ -127,5 +151,6 @@ btnResumen.addEventListener('click', () => {
         costoEnTitulo.textContent = valorBoleto * 0.85;
         costo.textContent = boletoConDescuento;
     }
+}
 }
 )
