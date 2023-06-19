@@ -79,10 +79,16 @@ btnBorrar.addEventListener('click', () => {
     carta1.classList.replace('borde-color-naranja', 'borde-color-azul');
     carta2.classList.replace('borde-color-naranja', 'borde-color-azul');
     carta3.classList.replace('borde-color-naranja', 'borde-color-azul');
+
+    nombre.classList.remove("incomplete-form");
+    apellido.classList.remove("incomplete-form");
+    email.classList.remove("incomplete-form");
+    cantidad.classList.remove("incomplete-form");
+
     //Valor de las Entradas Inicial
     boletoConDescuento = valorBoleto;
     costoEnTitulo.textContent = boletoConDescuento;
-    costo.textContent = boletoConDescuento;
+    costo.textContent = "---";
     //Borrar Campos
     let eraser = document.getElementById('nombre');
     eraser.value ="";
