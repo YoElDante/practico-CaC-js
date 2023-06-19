@@ -101,23 +101,31 @@ btnResumen.addEventListener('click', () => {
     
     if (nombre.value == false){
         nombre.classList.add("incomplete-form");
-        return console.log ("Falta colocar Nombre");
+        return alert ("Falta colocar Nombre");
     } else {
         nombre.classList.remove("incomplete-form");
     }
 
     if (apellido.value == false){
         apellido.classList.add("incomplete-form");
-        return console.log ("Falta colocar Apellido");
+        return alert ("Falta colocar Apellido");
     } else {
         apellido.classList.remove("incomplete-form");
     }
 
     if (email.value == false){
         email.classList.add("incomplete-form");
-        return console.log ("Falta colocar email");
+        return alert ("Falta colocar email");
     } else {
         email.classList.remove("incomplete-form");
+    }
+
+    if (cantidad.value < 1){
+        cantidad.classList.add("incomplete-form");
+        return alert ("Cantidad de Entradas Incorrecto " + cantidad.value );
+    } else {
+        cantidad.classList.remove("incomplete-form");
+    }
 
     if (categoria.value == "Estudiante") {
         //Cambio de Color la card
@@ -151,6 +159,5 @@ btnResumen.addEventListener('click', () => {
         costoEnTitulo.textContent = valorBoleto * 0.85;
         costo.textContent = boletoConDescuento;
     }
-}
 }
 )
